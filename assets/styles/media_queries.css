@@ -1,0 +1,57 @@
+@media only screen and (max-width:1050px){
+    .main--container{
+        width: 90%;
+    }
+    #nav-bar{
+        width:80%;
+    }
+
+    #nav--list:hover li{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        filter: blur(0);
+        -webkit-filter: blur(0);
+}
+
+    #nav--list  li:hover{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+}
+
+@media only screen and (max-width:660px){
+    body{
+        font-size: 12px;
+    }
+    
+    .main--container{
+        width: 100%;
+    }
+    
+    #nav-bar{
+        width:100%;
+    }
+
+    ul{
+        padding: 0px;
+    }
+
+    #nav--list li{
+        margin:0px 20px;
+    }
+    
+}
+
+@media only screen and (max-width:375px){
+    #header-img{
+        display: none;
+    }
+    
+}
+
