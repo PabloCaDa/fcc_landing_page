@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/media_queries.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Landing Page</title> 
 </head>
 <body>
@@ -18,7 +19,7 @@
             </div>
             <nav id="nav-bar" class="flex flex--end">
                 <ul id="nav--list" class="flex flex--center">
-                    <li><a href="#whatsYeah" class="nav-link">What's Yeah?</a></li>
+                    <li><a href="#whatsYeah" class="nav-link">What's Teamks?</a></li>
                     <li><a href="#features" class="nav-link">Features</a></li>
                     <li><a href="#contactUs" class="nav-link">Contact Us</a></li>
                 </ul>
@@ -28,26 +29,92 @@
 
     <section id="whatsYeah"  class="flex flex--center">
         <div>
-            <video id="video" class="bg-white">
-                <source src="https://www.youtube.com/watch?v=Q80LQnJ68a8" type="video/mp4">
+            <video id="video" class="bg-white" autoplay muted loop>
+                <source src="assets\video\Pexels Videos 2603.mp4" type="video/mp4">
             </video>
-            <form action="https://www.freecodecamp.com/email-submit" id="form">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Write your mail" required>
-                <input type="submit"  value="Send Email" id="submit">
-            </form>
+            <div id="whatsYeah-content">
+                <h1>Change the way you communicate with your team!</h1>
+                <p class="text-center">
+                    With Teamks you will be able to schedule meetings, talk with any member of your team and manage every task 
+                    of them on real life thanks to it's easy aund usable interface. Designed for developers to developers.
+                </p>
+                <form action="https://www.freecodecamp.com/email-submit" id="form" class="flex flex--center flex--column">
+                    <label for="email">Subscribe to keep update on Teamks</label>
+                    <input type="email" name="email" id="email" placeholder="Write your mail" required>
+                    <input type="submit"  value="Send Email" id="submit">
+                </form>
+            </div>
         </div>
     </section>
-    <section id="features"></section>
-    <section id="contactUs"></section>
-
-    <section id="poster-showcase" class="bg-black flex flex--center">
-        <div class="flex flex--center flex--justify-between">
-            <div class="poster poster-1"></div>
-            <div class="poster poster-2"></div>
-            <div class="poster poster-3"></div>
+    <section id="features" class="bg-black">
+        <h1 class="text-center">Features</h1>
+        <div id="features-content" class="flex flex--justify-between">
+            <div class="feature flex flex--center flex--column">
+                <div class="feature-img">
+                        <i class="fas fa-bolt fa-3x"></i>
+                </div>
+                <div class="feature-description">
+                    <h2 class="text-center">FASTER</h2>
+                    <p class="text-center">Contact with your people with a simple click and get all the updates in a breathe. You will always know what's hapenning in your team</p>
+                </div>
+            </div>
+            <div class="feature flex flex--center flex--column">
+                <div class="feature-img">
+                        <i class="fas fa-calendar-alt fa-3x"></i>
+                </div>
+                <div class="feature-description">
+                    <h2 class="text-center">SCHEDULE</h2>
+                    <p class="text-center">Control your team's timetable and set up meetings with them or with clients. Our alarm system will help you to suit everything up for an optimal organization</p>
+                </div>
+            </div>
+            <div class="feature flex flex--center flex--column">
+                <div class="feature-img">
+                        <i class="fas fa-cogs fa-3x"></i>
+                </div>
+                <div class="feature-description">
+                    <h2 class="text-center">MANAGEMENT</h2>
+                    <p class="text-center">Assign, organize and overview every task you order to your team. With our task's visor you wont loose a bit.</p>
+                </div>
+            </div>
         </div>
     </section>
+    <section id="contactUs" class="bg-white">
+        <div class="main--container">
+            <h1 class="text-center">Contact us!</h1>
+            <ul id="contact-list" class="flex flex--justify-between">
+                <li class="github-icon">
+                    <a href="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-github-square"></span>
+                    </a>
+                </li>
+                <li class="linkedin-icon">
+                    <a href="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-linkedin"></span>
+                    </a>
+                </li>
+                <li class="gmail-icon">
+                    <a href="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fas fa-envelope-square"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+        <section id="footer" class="bg-black text-center">
+            <p>Fake Products Company <i class="far fa-copyright"></i> Pablo Cabrera Darias invention</p>
+        </section>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

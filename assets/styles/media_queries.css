@@ -37,6 +37,10 @@
     #nav-bar{
         width:100%;
     }
+    
+    #nav-bar.flex--end{
+        justify-content: space-between;
+    }
 
     ul{
         padding: 0px;
@@ -46,12 +50,35 @@
         margin:0px 20px;
     }
     
+    #header-img-container{
+        display: none;
+    }
+
+    #whatsYeah-content{
+        width:100%;
+    }
+
+    #features-content.flex{
+        flex-direction: column;
+    }
+
+    .feature{
+        width: 100%;
+        margin-top:20px
+    }
 }
 
 @media only screen and (max-width:375px){
-    #header-img{
+    #header-img-container{
         display: none;
     }
     
+    #nav--list li{
+        margin:0px 10px;
+    }
+    
+    #whatsYeah-content{
+        width:100%;
+    }
 }
 
